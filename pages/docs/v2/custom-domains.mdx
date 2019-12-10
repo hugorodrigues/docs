@@ -10,7 +10,7 @@ export const meta = {
   title: 'Custom Domains',
   description: 'How to add and use a custom domain with your project.',
   editUrl: 'pages/docs/v2/custom-domains.mdx',
-  lastEdited: '2019-11-19T16:08:37.000Z'
+  lastEdited: '2019-12-10T13:56:31.000Z'
 }
 
 By default, all deployments are assigned a `.now.sh` prefixed domain.
@@ -161,7 +161,19 @@ To add a redirect, select the domain you want to redirect to from the **Redirect
 />
 <Caption>A <b>domain redirect</b> that redirects requests made to <InlineCode>www.zeit.rocks</InlineCode> to <InlineCode>zeit.rocks</InlineCode>.</Caption>
 
-## Removing a Domain
+## Moving Domains
+
+You can move a domain to another account using the **Domains** tab from the **ZEIT Dashboard**.
+
+<Image
+  src={`${process.env.ASSETS}/docs/custom-domains/select-domains-tab.png`}
+  width={1224 / 2}
+  height={278 / 2}
+  shadow
+/>
+<Caption>Selecting the <b>Domains</b> tab from the ZEIT Dashboard page.</Caption>
+
+## Removing Domains
 
 To remove a domain that is assigned to your ZEIT account or team, navigate to the **Domains** tab from the Project Overview and click the **Edit** button for the domain you want to remove:
 
