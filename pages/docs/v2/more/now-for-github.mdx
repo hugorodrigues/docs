@@ -10,7 +10,7 @@ export const meta = {
   description:
     'Deploy each change in your GitHub repositories with ZEIT Now to share and test with your colleagues. Instant share-able links to your work with each push. Automatically make your changes available from production domains.',
   editUrl: 'pages/docs/v2/more/now-for-github.mdx',
-  lastEdited: '2019-12-17T04:03:00.000Z'
+  lastEdited: '2019-12-18T15:50:35.000Z'
 }
 
 The Now for GitHub integration automatically deploys your GitHub projects with [ZEIT Now](/now), providing preview URLs and automatic production domain updates.
@@ -187,17 +187,17 @@ Listed below are the permissions we require from GitHub along with the reasons w
 
 ### Repository Permissions
 
-| Permission        | Read | Write | Description                                                         |
-| ----------------- | ---- | ----- | ------------------------------------------------------------------- |
-| `Administration`  | Y    | Y     | Allows us to create repositories on the user's behalf.              |
-| `Checks`          | Y    | Y     | Allows us to run checks against user source code on push and.       |
-| `Contents`        | Y    | Y     | Allows us to compare file hashes for de-duplication.                |
-| `Deployments`     | Y    | Y     | Allows us to synchronize deployment status between GitHub and ZEIT. |
-| `Issues`          | Y    | Y     | ???                                                                 |
-| `Metadata`        | Y    | N     | Allows us to read basic repository metadata.                        |
-| `Pull Requests`   | Y    | Y     | Lets us create deployments per each pull request.                   |
-| `Web Hooks`       | Y    | Y     | Allows us to react to various GitHub events.                        |
-| `Commit Statuses` | Y    | Y     | Allows us to syncronize commit status between GitHub and ZEIT.      |
+| Permission        | Read | Write | Description                                                                  |
+| ----------------- | ---- | ----- | ---------------------------------------------------------------------------- |
+| `Administration`  | Y    | Y     | Allows us to create repositories on the user's behalf.                       |
+| `Checks`          | Y    | Y     | Allows us to add checks against user source code on push.                    |
+| `Contents`        | Y    | Y     | Allows us to fetch and write source code for new project creation templates. |
+| `Deployments`     | Y    | Y     | Allows us to synchronize deployment status between GitHub and ZEIT.          |
+| `Pull Requests`   | Y    | Y     | Allows us create deployments per each pull request and comment on them.      |
+| `Issues`          | Y    | Y     | GitHub considers all Pull Requests to be Issues.                             |
+| `Metadata`        | Y    | N     | Allows us to read basic repository metadata to provide a detailed dashboard. |
+| `Web Hooks`       | Y    | Y     | Allows us to react to various GitHub events.                                 |
+| `Commit Statuses` | Y    | Y     | Allows us to syncronize commit status between GitHub and ZEIT.               |
 
 ### Organization Permissions
 
