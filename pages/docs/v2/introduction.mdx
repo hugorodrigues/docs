@@ -1,7 +1,10 @@
 import Doc from '~/components/layout/docs'
+import Card from '~/components/card'
 import Snippet from '~/components/snippet'
 import Caption from '~/components/text/caption'
-import Card from '~/components/card'
+import Quickstarts, { Quickstart } from '~/components/quickstarts'
+
+import { quickstarts } from '~/lib/data/v2/quickstarts'
 
 export const meta = {
   title: 'Introduction to ZEIT Now',
@@ -58,6 +61,16 @@ When your Next.js app is created, all you have to do is move into the directory 
 Once deployed, you will get a preview URL that is assigned on each deployment to share the latest changes under the same address.
 
 The preview URL will look like the following: <https://my-next-project.now-examples.now.sh/>
+
+## Quickstarts
+
+Quickstarts let you get started quickly. The following quickstarts are paired with guides and a deploy button, based on [ZEIT Now examples](https://github.com/zeit/now-examples), to help you get going with your project as fast as possible.
+
+<Quickstarts>
+  {quickstarts.map(({ name, ...quickstart }) => (
+    <Quickstart quickstart={name} {...quickstart} />
+  ))}
+</Quickstarts>
 
 ## Related
 
